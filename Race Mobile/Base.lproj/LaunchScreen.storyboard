@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-oH-Rlw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asphalt" translatesAutoresizingMaskIntoConstraints="NO" id="tnY-xG-OeR">
+                                <rect key="frame" x="87" y="0.0" width="240" height="736"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="oQB-NS-tka"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dlJ-oH-Rlw" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="6lZ-io-779"/>
+                            <constraint firstItem="tnY-xG-OeR" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="BWy-5M-atY"/>
+                            <constraint firstItem="dlJ-oH-Rlw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BzX-A5-4Xu"/>
+                            <constraint firstAttribute="bottom" secondItem="dlJ-oH-Rlw" secondAttribute="bottom" id="Ddj-PP-hY5"/>
+                            <constraint firstItem="dlJ-oH-Rlw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RHB-fd-fA0"/>
+                            <constraint firstItem="tnY-xG-OeR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="h6t-Op-HeH"/>
+                            <constraint firstItem="tnY-xG-OeR" firstAttribute="centerX" secondItem="dlJ-oH-Rlw" secondAttribute="centerX" id="iCy-mf-CIF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="372.554347826087"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="asphalt" width="308.33334350585938" height="215.66667175292969"/>
+        <image name="grass" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>
