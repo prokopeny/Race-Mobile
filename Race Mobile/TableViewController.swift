@@ -38,7 +38,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource{
         cell.selectionStyle = .none
         cell.nameLabel.text = records.resultArray[indexPath.row].nameItem
         cell.scoreLabel.text = ("очки: \(String(records.resultArray[indexPath.row].countItem!))")
-        cell.userPhotoImageView.layer.cornerRadius = cell.userPhotoImageView.frame.size.width / 2
+        cell.userPhotoImageView.layer.cornerRadius = 10
         cell.userPhotoImageView.contentMode = .scaleAspectFill
         cell.userPhotoImageView.image = UIImage(data: records.resultArray[indexPath.row].imageItem!)
         return cell

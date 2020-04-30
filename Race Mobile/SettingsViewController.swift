@@ -24,7 +24,7 @@ class SettingsViewController: UIViewController {
         speedLabel.text = speedArray[setting.speedPosition]
         imagePicker.delegate = self
         userPhotoImageView.image = UIImage(data: setting.imageData!)
-        userPhotoImageView.layer.cornerRadius = userPhotoImageView.frame.size.width / 2
+        userPhotoImageView.layer.cornerRadius = 20
         let tap = UITapGestureRecognizer(target: self, action: #selector(pick(sender:)))
         tap.numberOfTapsRequired = 1
         self.userPhotoImageView.addGestureRecognizer(tap)
